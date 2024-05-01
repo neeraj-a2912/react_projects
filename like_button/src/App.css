@@ -1,0 +1,29 @@
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.emojis {
+  display: flex;
+  justify-content: space-center;
+  align-items: center;
+}
+
+.emoji {
+  font-size: 50px;
+}
+
+.heart {
+  color: red;
+  margin: 0px 10px;
+}
+.thumb {
+  color: blue;
+  margin: 0px 10px;
+}
+.upvote {
+  color: orange;
+  margin: 0px 10px;
+}
