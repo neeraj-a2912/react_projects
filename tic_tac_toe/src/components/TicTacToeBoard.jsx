@@ -55,7 +55,11 @@ const TicTacToeBoard = () => {
           <span style={{ color: '#7ac8e3' }}>Tac</span>
           <span style={{ color: 'rgb(226, 172, 103)' }}>Toe</span>
         </h1>
-        <h4 style={{ margin: '10px 0' }}>Player {isX ? 'X' : '0'} Turn</h4>
+        {winner || boardFull ? (
+          <h4 style={{ margin: '10px 0' }}>Player {isX ? 'X' : '0'} Turn</h4>
+        ) : (
+          ''
+        )}
         <div className="board-row">
           <SquareBox onClick={() => handleClick(0)} value={state[0]} />
           <SquareBox onClick={() => handleClick(1)} value={state[1]} />
