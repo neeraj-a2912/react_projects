@@ -1,11 +1,14 @@
-import './App.css'
+import './App.css';
+import Converter from './Converter';
 
 function App() {
   return (
-    <div className="App">
-      Currency Convertor
+    <div className="row">
+      <div className="App shadow-sm p-3">
+        <Converter />
+      </div>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
